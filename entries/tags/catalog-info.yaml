@@ -12,3 +12,13 @@ spec:
     - resource:default/artists-db
   providesApis:
     - artist-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: artists-db1
+  description: Stores artist details
+spec:
+  type: database
+  owner: artist-relations-team
+  system: artist-engagement-portal
