@@ -1,14 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: holiday-songs
-  description: The place to be, for great holiday songs
+  name: tutorial
+  annotations:
+    github.com/project-slug: DinhNhat97/tutorial
 spec:
-  type: service
-  lifecycle: production
+  type: other
+  lifecycle: unknown
   owner: team-a
-  system: artist-engagement-portal
-  dependsOn:
-    - resource:default/artists-db
-  providesApis:
-    - artist-api
